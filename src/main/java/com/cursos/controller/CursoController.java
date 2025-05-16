@@ -28,9 +28,14 @@ public class CursoController {
         public Curso guardarCurso(@RequestBody Curso cur){
             return serviceCursos.guardarCurso(cur);
         }
+     
+    @GetMapping("{idcurso}")
+        public Curso buscarCurso(@PathVariable int idcurso){
+            return serviceCursos.getCursoId(idcurso);
+        }    
     @DeleteMapping("(idcurso)")
-        public void eliminar(@PathVariable int idcurso){
-            return;
+        public String eliminar(@PathVariable int idcurso){
+            return serviceCursos.eliminar(idcurso);
         }        
 
 }

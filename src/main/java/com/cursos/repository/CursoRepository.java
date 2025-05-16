@@ -13,8 +13,18 @@ public class CursoRepository {
 
     private List<Curso> listarCursos = new ArrayList<>();
 
+
     public List<Curso> obtenerCursos(){
         return listarCursos;
+    }
+
+    public Curso buscarCursoPorId(int idcurso){
+        for (Curso curso : listarCursos) {
+            if (curso.getIdcurso()== idcurso){
+                return curso;
+            }
+        }
+        return null;
     }
 
     public Curso guardarCurso(Curso cur){
@@ -36,6 +46,8 @@ public class CursoRepository {
         return;
    
     }
+
+
 
 
 

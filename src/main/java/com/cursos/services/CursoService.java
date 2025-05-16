@@ -17,10 +17,17 @@ public class CursoService {
         public List<Curso> obteneCursos(){
             return repositoryCursos.obtenerCursos();
         }
+
         public Curso guardarCurso(Curso cur){
             return repositoryCursos.guardarCurso(cur);
         }
-        public void eliminar(int idcurso){
-            return;
+
+        public Curso getCursoId(int idcurso) {
+            return repositoryCursos.buscarCursoPorId(idcurso);
+        }
+
+        public String eliminar(int idcurso){
+            repositoryCursos.eliminar(idcurso);
+            return "curso Eliminado";
         }
 }
