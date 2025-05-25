@@ -5,7 +5,11 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
+<<<<<<< HEAD
 		<version>3.4.6</version>
+=======
+		<version>3.4.5</version>
+>>>>>>> 2351162a5ea882620a6217c56938e6a6e236b1b4
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.cursos</groupId>
